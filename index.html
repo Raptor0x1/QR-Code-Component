@@ -5,21 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | QR code component</title>
 
   <style>
+    
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+    
+    body {
+      height: 100%;
+      font-size: 15px;
+      font-family: 'Outfit';
+    }
 
     .container {
-      height: 497px;
-      width: 320px;
-      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: hsl(212, 45%, 89%);
+    }
 
+    .container-card {
+      padding: 16px;
+      width: 320px;
+      height: 497px;
+      text-align: center;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 20px;
+    }
+     
+    .para1 {
+      margin-top: 24px;
+      font-weight: 700;
+      color: hsl(218, 44%, 22%);
+      font-size: 22px;
+    }
+
+    .para2 {
+      margin-top: 16px;
+      font-weight: 400;
+      color: hsl(220, 15%, 55%);
+      padding: 0px 16px 0px;
     }
 
   </style>
@@ -27,9 +59,13 @@
 <body>
 
   <div class="container">
-    <img src="images\image-qr-code.png" alt="QR code image" height="288px" width="288px">
-    <h2>Improve your front-end skills by building projects</h2>
-    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+
+    <div class="container-card">
+      <img src="images/image-qr-code.png" alt="QR code image" height="288px" width="288px" style="border-radius: 10px;">
+      <p class="para1">Improve your front-end skills by building projects</p>
+      <p class="para2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+
   </div>
 </body>
 </html>
